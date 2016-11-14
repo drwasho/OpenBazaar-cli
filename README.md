@@ -84,4 +84,17 @@ Display a map of your peers
 
     > ob peers --map >map.html
     > map.html
-    
+
+### Troubleshooting
+
+After installing, if the terminal responds with: `node\r: No such file or directory`, you can fix the problem with the following commands:
+
+```bash
+sudo vim /usr/local/bin/ob
+:set ff=unix
+enter key
+:x
+enter key
+```
+
+This assumes that you install OpenBazaar-Cli in the default directory, if not change `/usr/local/bin/ob` to whatever the path is.
